@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ian's Ai Demo test Page 3 vers 2.0</title>
+
+<!--
+/*
+Ian's Ai Demo Beta Beta test Page 3 for menus vers 3.0.
+
+This is a beta beta version of a javascript Prolog AI language interpreter.<br>
+It is not fully functional,and is in development.
+
+
+COPYRIGHT NOTICE.
+
+This code is copyright  (C)  by Ian Pouncy 18/12/16.
+
+under the   GNU GENERAL PUBLIC LICENSE,  Version 3, 29 June 2007 , see Free Software Foundation, Inc. <http://fsf.org/> 
+
+ 
+
+This means you can use it if you want under the terms of that licence.
+
+
+
+This source code  has been registered on github (user name Ianp44) on 18/12/16.
+
+
+
+
+*/
+
+-->
+<style type="text/css">
+.divclass5 {
+	font-family: "times New Roman";
+	font-size: 15pt;
+	color: #00F;
+	padding: 10px;
+	position: relative;
+	left: 40px;
+	top: 30px;
+	border: 2px solid #009;
+	width: 600px;
+}
+</style>
+<!--
+<style type="text/css">
+.divclass{
+position:absolute;
+width: 100px;
+height:100px;
+border: 1px solid black;
+top: 300px;
+left: 100px;
+visibility:hidden;
+/*
+background-color:red;
+visibility:hidden;
+*/
+}
+/*
+.divclass:hover{
+background-color:green;
+visibility:visible;
+
+}
+*/
+
+
+.divclass2{
+position:absolute;
+width: 100px;
+height:1.3em;
+border: 1px solid black;
+top: 300px;
+left: 100px;
+overflow:hidden;
+}
+/*
+.divclass2:hover{
+height:100px;
+
+}
+*/
+
+.testd_topc {
+	border: 1px solid #900;
+	position: absolute;
+	height: 1.3em;
+	width: 100px;
+	left: 500px;
+	top: 200px;
+}
+#testd_dropc {
+	border: 1px solid #00F;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 500px;
+	top: 200px;
+}
+</style>
+-->
+<!--
+<script src="orgsite.js"> </script>
+-->
+
+<script src= "ai_demo2_1.js"></script>
+<script src= "ai_pars2_3_1.js"></script>
+
+<script>
+function test_err4(){
+	try{
+flag_null_error("test_err4"	);
+	}
+	catch(err){
+		
+process_error(err);
+		
+	}
+}
+
+
+function zinit7(){
+//zinit();
+zinit3();
+document.getElementById("maindiv").style.border='2px solid #00f';
+
+
+
+}
+function test_routine5(){
+	try{
+test_error5();
+	}
+	catch(err){
+		
+process_error(err);
+		
+	}
+	
+}
+</script>
+<link href="orgsite.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="zinit7()">
+<!--
+<b>Ian's Javascript Drop Down Menu Demo Pages</b><br>
+  (Version 5.0 20/9/14 )<br>
+<a href="../default.htm">Up to public site</a><br><br>
+<p id="demo1"> demo1 text </p>
+-->
+<!--
+<span id="spanid">Span text</span>
+-->
+
+<!--
+<div id="maindiv" class="maindivclass">
+-->
+
+<div id="maindiv" class="divclass5">
+
+
+<p><b>
+  Ian's Ai Demo Beta Beta test Page 3 for menus vers 3.0 18/12/16 Ok So far.</b><br>
+  <strong><br>
+    This is a beta beta demo (not fully functional) of a Javascript Prolog AI language Interpreter.<br>
+  </strong>Prolog is probably a bit out of date now, but can support a lot of artificial intelligence functionality.<br>
+  <br>
+  This demo can create and display a rule list. Also compiles and <br>
+  displays rule varable index list.
+  <br><br>
+  <strong>COPYRIGHT NOTICE.</strong><br>
+  
+  
+  This code is copyright  (C)  by Ian Pouncy 18/12/16.<br>
+  
+  under the   GNU GENERAL PUBLIC LICENSE,  Version 3, 29 June 2007 , see Free Software Foundation, Inc. <a href="http://fsf.org/" title="Link to Free Software Foundation">http://fsf.org/</a> <br>
+  and has also been registered on git hub. For more detail see the source code.<br>
+  </p>
+<p><strong>About the Test Buttons</strong><br>
+  The test and display functor routines button creates and displays some functor trees, including with proper Prolog Variables.<br>
+  <br>
+  The create rule base and display button creates some Prolog rules and puts them into the rule base, then displays the<br>
+  entire rule base.
+  <br>
+</p>
+<p>The dump label table button displays all the internal program symbols from the label table.<br>
+  </p>
+<p>To see the program output after you have clicked the buttons, scroll down the page.</p>
+<p><br>
+  (Vers 1.3 28/11/16 )<br><br>
+  
+  
+  <!--
+<a href="../default.htm">Back to  Demos Index</a><br>
+-->
+  <br>
+<!--
+  <a href="../filedump1.php?javascript/ai_demo2.html" title="Link to Page Filedump">View Page Source</a><br>
+  <a href="../filedump1.php?javascript/ai_demo2_1.js" title="Link to Filedump">View Javascript Ai Routines Include Source</a><br>
+  <a href="../filedump1.php?javascript/ai_pars2_3_1.js" title="Link to Filedump">View Javascript Text Parsing Routines Include Source</a><br><br>
+  <br>
+-->
+
+  <br>
+  
+  
+  <!--
+<button onclick="zinit3()">Do Program Init</button><br>
+--></p>
+<button onclick="test_functor()">Test and Display Functor Routines</button><br>
+<button onclick="create_rule_base()">Create Rule Base and  Display</button><br>
+<!--
+<button onclick="test_err4()">Test Null SysError</button><br>
+
+<button onclick="test_routine5()">Test Routine 5 </button><br>
+-->
+
+<button onclick="dump_labs()">Dump Label Table</button><br>
+
+
+<p><b>Error Status:</b> <span id="errep">errrep text</span></p>
+<p>&nbsp;</p>
+
+<!--
+<p>Program Output:<br> <span id="txtHint">txt hint txt</span></p><br>
+<br>
+<br>
+-->
+
+<p><b>Program Output:</b><br>
+ <span id="disp1">disp1 text</span></p>
+<br>
+<br>
+
+<p><b>Label Table Output:</b><br>
+ <span id="disp2">disp2 text</span></p>
+
+<br>
+<br>
+
+</div>
+<!--
+<div id="menu_bar_div"> 
+Menu Bar Start Text
+</div>
+-->
+  
+<!---
+<div class="testd_topc" id="testd_top" onMouseOver="visswitch('testd_top','testd_dropc')">Menu4</div>
+  
+<div class="testd_dropc" id="testd_dropc" onMouseOver="visswitch('testd_top','testd_dropc')" 
+onMouseOut="visswitch('testd_dropc','testd_top')">
+Menu<br>
+Opt1<br>
+Opt2<br>
+Opt2<br>
+
+</div>
+-->
+<!--
+<p id="demo2"> demo2 text </p>
+
+-->
+<!--
+<div id="div4" style="position:absolute; width:200px;height:300px;left:15px;top:300px;">
+<b>If you hover the mouse over<br>
+the "Menu" it will reveal a drop down menu.<br>
+This can contain links.<br>
+<a href="" onmouseover="do_test()">Click me to test</a>
+End of text
+</b>
+</div>
+-->
+<!--
+<div id="div8" style="position:absolute; width:600px;left:100px;top:200px; border: 1px solid green;">
+<b>Div8 test text mark two
+</b>
+</div>
+-->
+
+<!--
+<div id="div2" class="divclass2" onmouseover="zfunc(1)"> 
+-->
+<!--
+<div id="div2" class="divclass2" onmouseover="zfunc(1)">
+<b>Menu</b><br>
+Line1a<br>
+Line2b<br>
+Line3c<br>
+
+
+</div>
+
+
+<div id="div1" class="divclass" onmouseover="zfunc(1)" onmouseout="zfunc(0)">
+
+<b>Menu</b><br>
+Entry 1<br>
+Entry 2<br>
+Entry 3<br>
+
+</div>
+-->
+
+</body>
+</html> 
